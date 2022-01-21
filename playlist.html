@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <title>Ninja Music</title>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav>
+        <img class="logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+            alt="">
+        <div id="nav-name" class=" heading-font">
+            <h1>Ninja Studio</h1>
+        </div>
+
+        <div class="nav-items">
+            <a href="#fav">
+                <h3>Favourites</h3>
+            </a>
+            <a href="#recently-played">
+                <h3>Recently Played</h3>
+        </div>
+
+        <div class="search-box">
+            <form action="#">
+                <input type="search" class="search-data" placeholder="Search" required>
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+        </div>
+
+
+        <div class="notify">
+            <a href="#notifications"><i class="fas fa-bell icons"></i></a>
+
+        </div>
+
+        <div class="login">
+            <a href="#login"><i class="fas fa-user-circle icons"></i></a>
+        </div>
+
+
+        <div class="bars">
+            <!-- on decreasing the width to less than 992px hamburger will appear -->
+            <div class="hamburger">
+                <a href="#"><i class="fas fa-bars icons" style="user-select: auto;"></i></a>
+            </div>
+            <!-- on decreasing the width to less than 600px on hovering hamburger other features will appear -->
+            <div class="horizontal-nav">
+                <ul>
+                    <li> <a href="#fav">
+                            <h3>Favourites</h3>
+                        </a>
+                    </li>
+                    <li> <a href="#recently-played">
+                            <h3>Recently Played</h3>
+                    </li>
+                    <li> <a class="extra-settings" href="#notify">
+                            <h3>Notifications</h3>
+                        </a></li>
+                    <li> <a class="extra-settings" href="#login">
+                            <h3>Login</h3>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="bodysection">
+        <main class="mainsection">
+            <div id="playlist-banner">
+                <div class="playlist-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkXuo_KVuu1r6fJ3qBm3yQ4SZc4dkRs9BKg&usqp=CAU"
+                        alt="">
+                </div>
+
+                <div class="playlist-content">
+                    <div id="playlist-description">
+                        <div id="playlist-heading">
+                            <h1>Imagine Dragons</h1>
+                            <p id="followers">1002 Followers</p>
+                        </div>
+
+                        <div id="short-description">
+                            <p>Pop Band</p>
+                        </div>
+
+                        <div id="long-description">Led by a pair of explosive singles (“It’s Time” and “Radioactive”),
+                            the band went on to become one of the more singular successes of the 2010s, leveraging
+                            stadium-ready indie rock with synth-pop, dubstep, stomping folk, and hints of New Wave—a
+                            sound that jumped out of speakers like a bright neon light. They followed up at a steady
+                            clip (2015’s Smoke + Mirrors, 2017’s Evolve, 2018’s Origins), refining their sound without
+                            dulling its cathartic edge.</div>
+                    </div>
+
+                    <div id="playlist-buttons">
+                        <a href="#"><span>Play All</span> </a>
+
+                        <a href="#"><span>Follow</span> </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="playlist">
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">01.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="0">
+                    <p class="songName">Traffic Lights</p>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">02.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="1">
+                    <span class="songName">Senorita</span>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">03.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="2">
+                    <span class="songName">Baby</span>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">04.</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                            alt="3">
+                        <span class="songName">Count on me</span>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">05.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="4">
+                    <span class="songName">Sing me to sleep</span>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">06.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="5">
+                    <span class="songName">Ignite</span>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">07.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="6">
+                    <span class="songName">One Day</span>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">08.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="1">
+                    <span class="songName">Gasoline</span>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">09.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="2">
+                    <span class="songName">Treat you Better</span>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="itemBox">
+                <div class="img-num">
+                    <p class="count">10.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="3">
+                    <span class="songName">Girls like you</span>
+                </div>
+                <div class="time">
+                    <p>4.44</p>
+                </div>
+                <div class="heart">
+                    <span>
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+            
+        </div>    
+
+        </main>
+
+        <aside class="asidesection">
+
+            <div class="latest-release">
+                <div class="heading-font">
+                    <h1>Similar Artist</h1>
+                    <p>View All</p>
+                </div>
+            </div>
+
+          
+
+                <div class="asideBox">
+                    <div class="itemBox">
+                        <p class="count">01.</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                            alt="0">
+                        <span class="songName">Traffic Lights</span>
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="itemBox">
+                        <p class="count">02.</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                            alt="1">
+                        <span class="songName">Senorita</span>
+                        <span class="songlistplay">
+                            <span class="songName">
+                                <span>
+                                    <i class="far fa-heart"></i>
+                                </span>
+                            </span>
+                    </div>
+                    <div class="itemBox">
+                        <p class="count">03.</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                            alt="2">
+                        <span class="songName">Baby</span>
+                        <span class="songlistplay">
+                            <span class="songName">
+                                <span>
+                                    <i class="far fa-heart"></i>
+                                </span>
+                            </span>
+                    </div>
+                    <div class="itemBox">
+                        <p class="count">04.</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                            alt="3">
+                        <span class="songName">Count on me</span>
+                        <span class="songlistplay">
+                            <span class="songName">
+                                <span>
+                                    <i class="far fa-heart"></i>
+                                </span>
+                            </span>
+                    </div>
+            
+
+                <div class="heading-font">
+                    <h1>Recently Played</h1>
+                </div>
+                <div class="itemBox">
+                    <p class="count">03.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="2">
+                    <span class="songName">Baby</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">04.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="3">
+                    <span class="songName">Count on me</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">05.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="4">
+                    <span class="songName">Sing me to sleep</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">06.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="5">
+                    <span class="songName">Ignite</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">07.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="6">
+                    <span class="songName">One Day</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">08.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="1">
+                    <span class="songName">Gasoline</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">09.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="2">
+                    <span class="songName">Treat you Better</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">10.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="3">
+                    <span class="songName">Girls like you</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">11.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="4">
+                    <span class="songName">Shape of you</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">12.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="5">
+                    <span class="songName">Cradle</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                </div>
+                <div class="itemBox">
+                    <p class="count">13.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXXUUV2VvmTGIg_G9D5J3wkcNgigvZK3X2Jg&usqp=CAU"
+                        alt="6">
+                    <span class="songName">Thunder</span>
+                    <span class="songlistplay">
+                        <span class="songName">
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div id="music-player-card">
+        <div class="info-card">
+
+            <div class="info-img"><img
+                    src="https://media.istockphoto.com/photos/vintage-photo-of-a-young-woman-looking-at-vinyl-records-picture-id682915354?b=1&k=20&m=682915354&s=170667a&w=0&h=93RieVWfsYmO8KvBlmuLmYhCgq2sajcmliskVizM-bs="
+                    alt=""></div>
+
+            <div class="info-text font-color">
+                <p>Song Name</p>
+                <p>Artist name</p>
+
+            </div>
+            <div class="likes">
+                <a href="#"></a>
+            </div>
+        </div>
+
+        <div class="music-control">
+
+            <div class="music-control-items">
+                <i class="fas fa-random" id="shuffle"></i>
+                <i class="fas fa-1x fa-step-backward" id="previous"></i>
+                <i class="far fa-1x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-1x fa-step-forward" id="next"></i>
+            </div>
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+
+        </div>
+
+        <div class="music-control">
+            <div class="music-control-items">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" name="range" id="volume-bar" min="0" value="0" max="100">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="square-box-music-card" class="square-box-music-control">
+        <div class="square-info-card">
+
+            <img class="square-info-img"
+                src="https://media.istockphoto.com/photos/vintage-photo-of-a-young-woman-looking-at-vinyl-records-picture-id682915354?b=1&k=20&m=682915354&s=170667a&w=0&h=93RieVWfsYmO8KvBlmuLmYhCgq2sajcmliskVizM-bs="
+                alt="">
+
+            <div class="square-info-text font-color">
+                <p id="artist">All too well</p>
+                <p>Taylor Swift</p>
+
+            </div>
+            <div class="likes">
+                <a href="#"></a>
+            </div>
+        </div>
+
+        <div class="square-music-control">
+
+            <div class="square-music-control-items">
+                <i class="fas fa-1x fa-step-backward" id="previous"></i>
+                <i class="far fa-1x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-1x fa-step-forward" id="next"></i>
+                <i class="fas fa-volume-up"></i>
+                <input type="range" name="range" id="volume-bar" min="0" value="0" max="100">
+            </div>
+        </div>
+
+</body>
+
+</html>
